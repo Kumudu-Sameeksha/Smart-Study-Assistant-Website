@@ -1,0 +1,357 @@
+:root {
+  --dash-blue: #1a3a8a;
+  --dash-bg: #f4f7fe;
+  --text-dark: #333;
+  --accent-orange: #f39c12;
+  --calendar-width: 200px; /* Adjust this to change calendar size */
+}
+
+.dashboard-container {
+  background-color: var(--dash-bg);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icon and the text */
+}
+
+.logo-img {
+  height: 35px; /* Adjust based on your image size */
+  width: auto;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.dash-nav {
+  background-color: var(--dash-blue);
+  color: white;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.nav-right { display: flex; align-items: center; gap: 15px; }
+
+.user-avatar {
+  background: white;
+  color: var(--dash-blue);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  background: linear-gradient(to right, #0d1b3e, #1a3a8a);
+  margin: 20px 5%;
+  padding: 50px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-img img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.2);
+  object-fit: cover;
+}
+
+.get-started-btn {
+  background-color: #29abe2;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Dashboard Grid */
+.dash-content { padding-bottom: 50px; }
+.dash-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 0 5%;
+}
+
+.widget {
+  background: white;
+  border-radius: 15px;
+  padding: 20px; /* Reverted to 20px for better inner spacing */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.widget h3 { 
+  font-size: 1rem; 
+  margin-bottom: 15px; 
+  border-bottom: 1px solid #f0f0f0; 
+  padding-bottom: 10px; 
+  font-weight: 700;
+}
+
+/* --- Schedule Details & Calendar Scaling --- */
+.calendar-schedule-flex { 
+  display: flex; 
+  gap: 30px; 
+  align-items: flex-start;
+}
+
+.mini-calendar {
+  width: var(--calendar-width);
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.mini-calendar img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.month-nav {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+.daily-tasks {
+  flex-grow: 1;
+}
+
+.task-item {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 20px; /* Rounded pill shape from screenshot */
+  margin-bottom: 10px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.blue-task { 
+  background: #eef6fc; 
+  border-color: #d0e4f5;
+}
+
+.start-studying-btn {
+  background-color: var(--accent-orange);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Quiz Cards */
+.quiz-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  background: #f0f4f8;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.quiz-icon { font-size: 20px; }
+.quiz-title { font-weight: bold; font-size: 13px; margin: 0; }
+.quiz-time { font-size: 11px; color: #666; margin: 0; }
+
+/* Progress Chart */
+.progress-container {
+  text-align: center;
+}
+
+.monthly-btn {
+  background: #f0f4f8;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.bar-chart-placeholder {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  height: 120px;
+  margin-top: 20px;
+  border-bottom: 4px solid #ff5a5f; /* Red base line from screenshot */
+}
+
+.bar { 
+  width: 25px; 
+  border-radius: 4px 4px 0 0; 
+  transition: height 0.5s ease;
+}
+
+.orange { background: #ffcc33; }
+.blue { background: #56ccf2; }
+.green { background: #6fcf97; }
+.grey { background: #bdbdbd; }
+
+/* Activities */
+.activities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.activity-item {
+  font-size: 12px;
+}
+
+.activity-item strong {
+  display: block;
+  font-size: 13px;
+}
+
+.activity-item span {
+  color: #888;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+  text-align: center;
+  padding: 40px 5%;
+  background-color: #ffffff; /* Matches the white background in the screenshot */
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.recommendations-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.recommendations-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.recommendation-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.rec-card {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.rec-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Specific Card Colors from the image */
+.yellow-card {
+  background-color: #f6ff91; /* Bright yellow/lime */
+}
+
+.cyan-card {
+  background-color: #79d7ed; /* Light sky blue */
+}
+
+.rec-card h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.rec-image-wrapper {
+  width: 80px;
+  height: 100px;
+}
+
+.rec-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Footer */
+.dashboard-footer {
+  background: linear-gradient(to right, #06112a, #1a3a8a);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-action-btns {
+  margin-top: 25px;
+}
+
+.btn-footer-sign {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn-footer-learn {
+  background-color: white;
+  color: #06112a;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.footer-copyright { margin-top: 30px; font-size: 0.75rem; border-top: 1px ; padding-top: 20px; }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recommendation-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

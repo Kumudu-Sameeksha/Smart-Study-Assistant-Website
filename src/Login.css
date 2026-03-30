@@ -1,0 +1,112 @@
+/* Container with the diagonal blue gradient */
+.login-page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #b3cde0 30%, #011f4b 100%);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centered White Login Card */
+.login-card {
+  background-color: white;
+  padding: 40px 60px;
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.title-underline {
+  width: 150px;
+  height: 1px;
+  background-color: #000;
+  margin: 8px auto 30px auto;
+}
+
+/* Form Styling */
+.login-form {
+  text-align: left;
+}
+
+.input-field-group {
+  margin-bottom: 20px;
+}
+
+.input-field-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-field-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 12px; /* Rounded corners like the image */
+  background-color: #f0f7ff; /* Light blue tint from image */
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Checkbox and Forgot Pass row */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
+.remember-me {
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.forgot-pass {
+  color: #888;
+  text-decoration: none;
+}
+
+/* Login Button */
+.login-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #22c1ed; /* Bright blue from image */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-submit-btn:hover {
+  background-color: #1aa6cc;
+}
+
+/* Bottom Text */
+.signup-redirect {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.signup-redirect a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}

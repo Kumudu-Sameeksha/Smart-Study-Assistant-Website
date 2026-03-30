@@ -1,0 +1,119 @@
+.profile-page-wrapper {
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background: linear-gradient(135deg, #a7e1f7 0%, #ffffff 50%, #038eb9 100%);
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 1px solid #00acc1;
+}
+
+/* Header & Avatar */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.avatar-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #01579b;
+  overflow: hidden;
+  background: white;
+}
+
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-badge {
+  background-color: #283593;
+  color: white;
+  padding: 4px 20px;
+  border-radius: 5px;
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  z-index: 1;
+}
+
+/* Form Layout */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #01579b;
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #bdbdbd;
+  background: white;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #00acc1;
+}
+
+.inline-row {
+  display: flex;
+  gap: 15px;
+}
+
+.small { width: 45%; flex-direction: row; align-items: left; gap: 5px; }
+.small input { width: 100%; }
+
+.half { width: 50%; }
+.full { width: 100%; }
+
+.section-divider {
+  color: #1a237e;
+  font-size: 1rem;
+  border-bottom: 2px solid rgba(26, 35, 126, 0.2);
+  margin: 20px 0 15px 0;
+  padding-bottom: 5px;
+}
+
+/* Logout */
+.logout-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logout-btn {
+  background-color: #26c6da;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logout-btn:hover {
+  background-color: #00acc1;
+  transform: scale(1.05);
+}

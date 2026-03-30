@@ -1,0 +1,79 @@
+/* Full page background with the specific 135deg gradient */
+.pass-page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #b3cde0 30%, #011f4b 100%);
+  font-family: 'Arial', sans-serif;
+}
+
+/* White card styling */
+.pass-card {
+  background-color: white;
+  padding: 40px 60px;
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pass-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.pass-subtitle {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 5px 0 25px 0;
+}
+
+/* Form layout */
+.pass-form {
+  text-align: left;
+}
+
+.input-field-group {
+  margin-bottom: 20px;
+}
+
+.input-field-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.input-field-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+  background-color: #f0f7ff; /* Matches the light blue tint in your screenshots */
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Specific Orange Update Button */
+.update-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #f39c57; /* Specific orange from the image */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.update-btn:hover {
+  background-color: #e67e22;
+}

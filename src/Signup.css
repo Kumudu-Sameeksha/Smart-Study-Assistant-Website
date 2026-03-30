@@ -1,0 +1,124 @@
+/* Container with the diagonal blue-to-white gradient */
+.signup-page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #b3cde0 30%, #011f4b 100%);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centered White Sign Up Card */
+.signup-card {
+  background-color: white;
+  padding: 40px 60px;
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup-title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.title-underline {
+  width: 180px;
+  height: 1px;
+  background-color: #000;
+  margin: 8px auto 30px auto;
+}
+
+/* Form Styling */
+.signup-form {
+  text-align: left;
+}
+
+.input-field-group {
+  margin-bottom: 20px;
+}
+
+.input-field-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-field-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+  background-color: #f0f7ff; /* Light blue tint matching the image */
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Divider with 'or' */
+.divider-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.divider-row .line {
+  flex: 1;
+  height: 1px;
+  background-color: #000;
+}
+
+.divider-text {
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Social Icons */
+.social-icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.social-icons-row img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Sign Up Button */
+.signup-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #22c1ed; /* Bright cyan/blue from image */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.signup-submit-btn:hover {
+  background-color: #1aa6cc;
+}
+
+/* Bottom Text */
+.login-redirect {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.login-redirect a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}

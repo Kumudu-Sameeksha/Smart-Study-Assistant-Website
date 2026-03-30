@@ -1,0 +1,232 @@
+.res-page-container {
+  background-color: #f4f7fe; /* Light cyan background */
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icon and the text */
+}
+
+.logo-img {
+  height: 35px; /* Adjust based on your image size */
+  width: auto;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.res-navbar {
+  background-color: var(--primary-blue);
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.res-nav-links a {
+  color: white;
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.res-nav-links .active-nav {
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* Hero */
+.res-hero-banner {
+  background: linear-gradient(to right, #0d1b3e, #1a3a8a);
+  margin: 20px 5%;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.res-hero-text h1 { font-size: 2.2rem; margin-bottom: 10px; }
+.res-get-started {
+  background-color: #0ea5e9;
+  border: none;
+  padding: 8px 25px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.res-hero-illustration img {
+  width: 180px;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+}
+
+/* Search Wrapper */
+.res-search-wrapper {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.res-search-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align search and buttons to the left */
+}
+
+.search-input-box {
+  background: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #0ea5e9;
+  display: flex; /* To align glass icon and input */
+  align-items: center;
+  margin-bottom: 15px; /* Space between search and filter buttons */
+}
+
+.search-input-box .search-glass {
+    margin-right: 8px;
+    color: #0ea5e9;
+}
+
+.search-input-box input { border: none; outline: none; width: 300px; padding-left: 10px; }
+
+.filter-buttons { display: flex; gap: 10px; }
+.btn-green { background: #22c55e; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+.btn-cyan { background: #38bdf8; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+
+.res-search-image img { width: 300px; height: 150px; border-radius: 10px; }
+
+/* Grid Cards - UPDATED STYLES */
+.res-section { padding: 20px 80px; }
+.section-title { margin-bottom: 15px; }
+
+.res-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.res-card-with-header {
+  background: white; /* Soft Yellow for the main card background */
+  border-radius: 10px;
+  overflow: hidden; /* Ensures header corners are contained */
+  border: 1px solid #eab308;
+  display: flex;
+  flex-direction: column;
+}
+
+.res-card-blue-header {
+  background-color: #fef08a; /* Blue header from screenshot */
+  color: black;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-document-icon {
+  width: 25px; /* Size of the document icon */
+  height: 25px;
+  
+}
+
+.res-card-content {
+  padding: 15px;
+  flex-grow: 1; /* Allows content to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes button to the bottom */
+}
+
+.res-card-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 15px; /* Space above the button */
+}
+
+.res-read-article {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  align-self: flex-start; /* Aligns button to the left */
+}
+
+
+/* Download Rows */
+.res-download-list {
+  margin-top: 15px;
+}
+
+.res-download-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+}
+
+.download-icon { width: 40px; height: 40px; margin-right: 20px; }
+.download-info { flex: 1; font-size: 0.85rem; }
+.download-pdf-link { color: #f87171; font-weight: bold; font-size: 0.9rem; text-decoration: none; }
+
+/* Footer */
+.res-footer {
+  background: linear-gradient(to right, #06112a, #1a3a8a);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-action-btns {
+  margin-top: 25px;
+}
+
+.btn-footer-sign {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn-footer-learn {
+  background-color: white;
+  color: #06112a;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.footer-copyright { margin-top: 30px; font-size: 0.75rem; border-top: 1px ; padding-top: 20px; }
+/* General styles for icons/avatars (if not defined elsewhere) */
+.notif-icon, .profile-circle {
+    font-size: 1.2rem;
+    margin-left: 15px;
+}

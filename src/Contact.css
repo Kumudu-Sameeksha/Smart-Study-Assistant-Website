@@ -1,0 +1,231 @@
+.contact-page {
+  background-color: #f4f7fe; /* Main background color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Nav Styles */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icon and the text */
+}
+
+.logo-img {
+  height: 35px; /* Adjust based on your image size */
+  width: auto;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.contact-navbar {
+  background-color: var(--primary-blue);
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.contact-nav-links a {
+  color: white;
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.contact-nav-links .active-nav {
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* Hero */
+.contact-hero-banner {
+  background: linear-gradient(to right, #0d1b3e, #1a3a8a);
+  margin: 20px 5%;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.contact-hero-text h1 { font-size: 2.2rem; margin-bottom: 10px; ;}
+.contact-get-started {
+  background-color: #0ea5e9;
+  border: none;
+  padding: 8px 25px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.contact-hero-illustration img {
+  width: 180px;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+}
+
+
+
+/* Form Section */
+.contact-body-container {
+  padding: 20px 5%;
+}
+
+.contact-info-form {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #c9d6df;
+  margin-bottom: 40px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.user-icon-blue {
+  background: #0ea5e9;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.form-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.full-span {
+  grid-column: span 2;
+}
+
+.field-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.field-group input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  background-color: #f0f4f8;
+}
+
+.btn-save-changes {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Method Boxes */
+.contact-methods-flex {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.method-box {
+  background: rgb(240, 255, 142);
+  flex: 1;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #c9d6df;
+}
+
+.method-box img { width: 50px; margin-bottom: 10px; }
+.primary-info { font-weight: bold; margin-top: 8px; }
+.secondary-info { font-size: 0.75rem; color: #777; margin-top: 4px; }
+
+/* Social Section */
+.social-support-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.social-tile {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  border: 1px solid #c9d6df;
+  width: 320px;
+}
+
+.social-tile img { width: 50px; }
+
+.support-illustration { text-align: center; }
+.support-illustration img { width: 400px; }
+
+/* FAQ Styles */
+.faq-bar {
+  background-color: #f1f8ff;
+  padding: 15px 25px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e0;
+  border-radius: 12px;
+}
+
+.faq-bar p { flex: 1; margin: 0 15px; font-weight: 600; font-size: 0.9rem; }
+.plus-sign { font-weight: bold; font-size: 1.2rem; }
+
+/* Footer Styles */
+.contact-footer {
+  background: linear-gradient(to right, #06112a, #1a3a8a);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-action-btns {
+  margin-top: 25px;
+}
+
+.btn-footer-sign {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn-footer-learn {
+  background-color: white;
+  color: #06112a;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.footer-copyright { margin-top: 30px; font-size: 0.75rem; border-top: 1px ; padding-top: 20px; }
